@@ -70,6 +70,7 @@ export default function CartProvider({ children }) {
     cart.forEach((product, index) => {
       if (product._id === item._id) {
         cart.splice(index, 1)
+        item.count = 1;
       }
     })
 
