@@ -26,7 +26,7 @@ export default function ProductDetail() {
 
   const badgeValue = Object.keys(cart).length
 
-  function handleCart(product: ProductProps) {
+  function handleAddToCart(product: ProductProps) {
     const check = cart.every(item => {
       return item._id !== product._id
     })
@@ -84,7 +84,7 @@ export default function ProductDetail() {
                 </TouchableOpacity>
               ))}
             </ScrollView>
-            <TouchableOpacity style={styles.buttonCart} onPress={() => handleCart(product)}>
+            <TouchableOpacity style={styles.buttonCart} onPress={() => handleAddToCart(product)}>
               <Text style={styles.textButton}>Adicionar ao carrinho - {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price)}</Text>
             </TouchableOpacity>
           </View>
