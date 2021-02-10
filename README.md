@@ -37,20 +37,20 @@ This project does not go with the api, however it is very simple to create your 
 
 ``` bash
 {
-  "products": [
-		{
-			 "id": Number,
-			 "title": String,
-			 "price": Number,
-			 "numbers": [
-			      Number, Number, Number
-			    ],
-			 "description": String,
-			 "imagelink": String,
-			 "stock": Number,
-			 "count": Number
-		}
-			]
+    "products": [
+        {
+            "id": 1,
+            "title": "Tênis Jordan Delta Masculino",
+            "price": 649.99,
+            "numbers": [
+                38, 39, 40
+            ],
+            "description": "O Jordan Delta domina a arte da acessibilidade com um design expressivo e confortável de dentro para fora. Fabricado com uma mistura de materiais naturais e de alta tecnologia, esse tênis conta com espuma macia e leve debaixo do pé. Foi meticulosamente desenvolvido para um look e sensação que só a marca Jordan pode oferecer.",
+            "imagelink": "https://images.lojanike.com.br/500x500/produto/270937_2494584_20200910112116.jpg",
+            "stock": 5,
+            "count": 1
+        },
+    ]
 }
 
 ```
